@@ -28,86 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btnCheck = new System.Windows.Forms.Button();
+            this.lblCommand = new System.Windows.Forms.Label();
+            this.txtStringOne = new System.Windows.Forms.TextBox();
+            this.txtStringTwo = new System.Windows.Forms.TextBox();
+            this.lblStringOne = new System.Windows.Forms.Label();
+            this.lblStringTwo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnCheck
             // 
-            this.button1.Location = new System.Drawing.Point(11, 192);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCheck.Location = new System.Drawing.Point(11, 136);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnCheck.TabIndex = 0;
+            this.btnCheck.Text = "Check";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
-            // label1
+            // lblCommand
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.lblCommand.AutoSize = true;
+            this.lblCommand.Font = new System.Drawing.Font("Trajan Pro", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCommand.Location = new System.Drawing.Point(8, 9);
+            this.lblCommand.Name = "lblCommand";
+            this.lblCommand.Size = new System.Drawing.Size(418, 30);
+            this.lblCommand.TabIndex = 1;
+            this.lblCommand.Text = "Enter two strings in the Textbox to see if they are Equal\r\n(Cases Dont Matter)\r\n";
             // 
-            // textBox1
+            // txtStringOne
             // 
-            this.textBox1.Location = new System.Drawing.Point(172, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtStringOne.Location = new System.Drawing.Point(122, 57);
+            this.txtStringOne.Name = "txtStringOne";
+            this.txtStringOne.Size = new System.Drawing.Size(181, 20);
+            this.txtStringOne.TabIndex = 2;
             // 
-            // textBox2
+            // txtStringTwo
             // 
-            this.textBox2.Location = new System.Drawing.Point(172, 144);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtStringTwo.Location = new System.Drawing.Point(122, 97);
+            this.txtStringTwo.Name = "txtStringTwo";
+            this.txtStringTwo.Size = new System.Drawing.Size(181, 20);
+            this.txtStringTwo.TabIndex = 3;
             // 
-            // label2
+            // lblStringOne
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 96);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.lblStringOne.AutoSize = true;
+            this.lblStringOne.Font = new System.Drawing.Font("Trajan Pro", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStringOne.Location = new System.Drawing.Point(8, 57);
+            this.lblStringOne.Name = "lblStringOne";
+            this.lblStringOne.Size = new System.Drawing.Size(89, 15);
+            this.lblStringOne.TabIndex = 4;
+            this.lblStringOne.Text = "String One:";
             // 
-            // label3
+            // lblStringTwo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 144);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(120, 202);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "label4";
+            this.lblStringTwo.AutoSize = true;
+            this.lblStringTwo.Font = new System.Drawing.Font("Trajan Pro", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStringTwo.Location = new System.Drawing.Point(8, 97);
+            this.lblStringTwo.Name = "lblStringTwo";
+            this.lblStringTwo.Size = new System.Drawing.Size(91, 15);
+            this.lblStringTwo.TabIndex = 5;
+            this.lblStringTwo.Text = "String Two:";
             // 
             // frmStringEquality
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 227);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(432, 175);
+            this.Controls.Add(this.lblStringTwo);
+            this.Controls.Add(this.lblStringOne);
+            this.Controls.Add(this.txtStringTwo);
+            this.Controls.Add(this.txtStringOne);
+            this.Controls.Add(this.lblCommand);
+            this.Controls.Add(this.btnCheck);
             this.Name = "frmStringEquality";
             this.Text = "String Equality";
             this.ResumeLayout(false);
@@ -117,13 +111,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Label lblCommand;
+        private System.Windows.Forms.TextBox txtStringOne;
+        private System.Windows.Forms.TextBox txtStringTwo;
+        private System.Windows.Forms.Label lblStringOne;
+        private System.Windows.Forms.Label lblStringTwo;
     }
 }
 
